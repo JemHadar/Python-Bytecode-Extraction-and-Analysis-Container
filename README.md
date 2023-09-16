@@ -9,15 +9,25 @@
  When the shell script is intially executed, it may take 5 minutes give or take, depending on the speed of your internet connection and CPU for the docker image creation to complete. This is because when the image is bein built, the tools are being downloaded to the base image, setting the path variable, soft links and cleanup. One of the packages also is being compiled and installed from source so please be patient. Once the image is built, the execution of the container will take mere seconds for all subsequent containers since the base image is already built and cached.
 
  The following tools are installed:
+ 
  -Decompyle++
+ 
  -pyinstxtractor
+ 
  -Detect it Easy (DIEC)
+ 
  -uncompyle6
+ 
  -decompile3
+ 
  -pyc2bytecode
+ 
  -unpy2exe
+ 
  -hexviewer
+ 
  -Floss
+ 
  -Capa
 
  A big thank you to the authors of the tools below:
