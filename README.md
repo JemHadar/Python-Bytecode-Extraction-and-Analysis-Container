@@ -33,27 +33,35 @@
  A big thank you to the authors of the tools below:
 
  Decompyle++
+ 
  https://github.com/zrax/pycdc
 
  pyinstxtractor
+ 
  https://github.com/extremecoders-re/pyinstxtractor
 
  uncompyle6
+ 
  https://github.com/rocky/python-uncompyle6
 
  decompile3
+ 
  https://github.com/rocky/python-decompile3/tree/master
 
  pyc2bytecode
+ 
  https://github.com/knight0x07/pyc2bytecode
 
  unpy2exe
+ 
  https://github.com/matiasb/unpy2exe
 
  Mandiat Floss
+ 
  https://github.com/mandiant/flare-floss
 
- Mandiant capa
+ Mandiant CAPA
+ 
  https://github.com/mandiant/capa
  https://www.mandiant.com/resources/blog/capa-automatically-identify-malware-capabilities
  capa detects capabilities in executable files. You run it against a PE, ELF, .NET module, or shellcode file and it tells you    what it thinks the program can do. For example, it might suggest that the file is a backdoor, is capable of installing services,  or relies on HTTP to communicate.
