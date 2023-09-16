@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Check file argument
+if [ $# -eq 0 ]
+then
+  echo "Please provide a file for analysis."
+  exit 1
+fi
+
+image_name="py_bytecode_disasm"
+container_name="${image_name}_$(date +%s)"
+
+# Build docker image if it doesn't exist
+if [[ "$(docker images -q $image_name 2> /dev/null)" == "" ]]; then
+  docker build -t $image_name .
+fi
+
+# Create a temporary tar file and add maldoc specified in the argument of the script
+tar_file="$(mktemp)"
+tar -cf "$tar_file" "$@"
+
+# Run container with below options and keep it running
+docker run -d --network none --hostname $image_name --name $container_name $image_name tail -f /dev/null
+
+# Copy the tar file to the Docker container
+echo "Copying" "$@" "to the container"
+docker cp "$tar_file" "$container_name:/home/analysis/files.tar"
+docker exec "$container_name" tar -xf "/home/analysis/files.tar" -C "/home/analysis"
+docker exec "$container_name" rm "/home/analysis/files.tar" 
+
+docker exec -it $container_name /bin/bash
+
+# After the Docker container has finished running, kill and remove it
+docker kill $container_name > /dev/null 2>&1
+docker rm $container_name > /dev/null 2>&1
+echo "The container was dealloacted"
+
+# Remove the temporary tar file
+rm "$tar_file" 
