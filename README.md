@@ -64,7 +64,8 @@
  
  https://github.com/mandiant/capa
  https://www.mandiant.com/resources/blog/capa-automatically-identify-malware-capabilities
- capa detects capabilities in executable files. You run it against a PE, ELF, .NET module, or shellcode file and it tells you    what it thinks the program can do. For example, it might suggest that the file is a backdoor, is capable of installing services,  or relies on HTTP to communicate.
+ 
+ capa detects capabilities in executable files. You run it against a PE, ELF, .NET module, or shellcode file and it tells you     what it thinks the program can do. For example, it might suggest that the file is a backdoor, is capable of installing services,  or relies on HTTP to communicate.
 
  DIE
  https://github.com/horsicq/Detect-It-Easy
