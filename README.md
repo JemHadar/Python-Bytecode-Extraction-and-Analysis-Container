@@ -2,8 +2,6 @@
  To make it easier for anyone to extract python-byte code from a Windows binary which was packed with either py2exe or pyinstaller, I created this docker container. 
 
  A walkthrough will also show that the best method in this scenario would be to first determine which python utility was used and then proceed with the byte-code extraction and subsequent disassembly.
-
- Video Walkthrough:
  
 [![Video Walkthrough](https://img.youtube.com/vi/FQKF0Vx73Pc/0.jpg)](https://www.youtube.com/watch?v=FQKF0Vx73Pc "Walkthrough")
 
