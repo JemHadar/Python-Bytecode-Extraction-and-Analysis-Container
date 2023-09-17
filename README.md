@@ -3,6 +3,9 @@
 
  A walkthrough will also show that the best method in this scenario would be to first determine which python utility was used and then proceed with the byte-code extraction and subsequent disassembly.
 
+ Video Walkthrough:
+ [![Video Walkthrough]([https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg](https://img.youtube.com/vi/FQKF0Vx73Pc/0.jpg))]([https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE](https://www.youtube.com/watch?v=FQKF0Vx73Pc))
+
 
  The files to instantiate the container are the shell script and the dockerfile. When the shell script is executed, it will automatically create the docker image, install the necessary tools, and run the container transferring the file to be analyzed to our directory in the container.
 
