@@ -32,6 +32,8 @@
  
  -Capa
 
+ `#AE4DCA'To install docker, please follow the prerequisites outlined in MalDocAnalysis Container  [MalDocAnalysis Container](https://github.com/JemHadar/MalDocAnalysisContainer)
+
  A big thank you to the authors of the tools below:
 
  Decompyle++
